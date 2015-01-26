@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Verhuur.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"/>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- <script type="text/javascript" src="App_Themes/Verhuur/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="App_Themes/Verhuur/jquery-ui-1.10.4.min.js"></script> -->
+    <script>
+        $(function () {
+            $("input[type=submit], .button, #Menu a, #MenuAdmin a").button();
+            $("#MenuAdmin_SkipLink, #Menu_SkipLink").css("display", "none");
+        });
+        function goBack() {
+            window.history.go(-2)
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div class="container">
+        <form id="form1" runat="server">
+            <header>
+                <div class="row clearfix">
+                    <a href="Default.aspx">
+                        <div id="headerimage" class="column two-thirds">
+                        </div>
+                    </a>
+                    <div class="column third nopadding">
+                        <div class="centerAanmelding">
+                            <asp:Panel ID="AanmeldPanel" runat="server">
+                                <asp:Label SkinID="kortLabel" ID="LabelEmail" runat="server" Text="Email"></asp:Label>
+                                <asp:TextBox ID="TextboxEmail" runat="server" Width="150px"></asp:TextBox>
+                                <br />
+                                <asp:Label SkinID="kortLabel" ID="LabelWachtwoord" runat="server" Text="Wachtwoord"></asp:Label>
+                                <asp:TextBox ID="TextboxWachtwoord" runat="server" Width="150px" TextMode="Password"></asp:TextBox>
+                                <br />
+                            </asp:Panel>
+                            <asp:Button ID="Button1" runat="server" Text="Aanmelden" OnClick="Button1_Click" />
+                            <br />
+                            <asp:Label ID="LabelAanmeldMelding" runat="server" ForeColor="#FF3300"></asp:Label>
+                            <br />
+                            <asp:HyperLink ID="HyperLink1" CssClass="button" runat="server" NavigateUrl="~/Registreren.aspx">Registreren</asp:HyperLink>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <div class="row clearfix">
+                    <div class="column full">
+                        <asp:Menu ID="Menu" runat="server" DisappearAfter="0" Font-Size="Small">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Start" Value="Start"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Informatie.aspx" Text="Informatie" Value="Informatie"></asp:MenuItem>
+                                <asp:MenuItem Text="Registreren" Value="Registreren" NavigateUrl="~/Registreren.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Contract" Value="Contract" NavigateUrl="~/ContractPagina.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Reservaties" Value="Reservaties" NavigateUrl="~/Reservaties.aspx"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="column full">
+                        <asp:Menu ID="MenuAdmin" SkinID="MenuAdmin" runat="server" DisappearAfter="0">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/NieuwePeriode.aspx" Text="Nieuwe Periode" Value="Nieuwe Periode"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/BeheerPeriodes.aspx" Text="Beheer periodes" Value="Beheer periodes"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer class="centertext">
+                Ben Meulemans 2Ti4
+            </footer>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+﻿/*border-box all elements: Borders and padding are drawn inside the set width of your content. The margin is drawn outside.*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 59rem;
+    width: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.alwayshalfcolumn {
+    float: left;
+    width: 50%;
+}
+
+.row {
+    /*default full width*/
+}
+.nopadding{
+    padding: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* Small screens (default) */
+html {
+    font-size: 100%;
+}
+#headerimage{
+    height: 50px;
+    margin-top: 30px;
+    background: url("images/header.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav {
+    background-color: #F7F6F3;
+    padding-bottom: 20px;
+}
+p{
+    margin: 0px;
+    padding: 10px;
+}
+img {
+    width: 100%;
+}
+
+section {
+    background-image: url("images/background.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+    min-height: 470px;
+}
+
+header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #c7c6c6;
+}
+/*=========================== usefull classes ===========================*/
+.centertext {
+    text-align: center;
+}
+
+footer {
+    background-color: #c7c6c6;
+}
+
+.calcenter {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel {
+    border: solid grey 1px;
+    background-color: rgba(204,204,204,0.3);
+    padding: 10px;
+}
+
+.centerAanmelding {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallsize {
+    font-size: 0.75em;
+}
+iframe{
+    width: 100%;
+    margin: 0 auto;
+}
+/* Medium screens (704px) */
+@media (min-width: 44rem) {
+    .centerAanmelding {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    html {
+        font-size: 112%;
+    }
+
+    .column {
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+        .column.full {
+            width: 100%;
+        }
+
+        .column.two-thirds {
+            width: 66.7%;
+        }
+
+        .column.half {
+            width: 50%;
+        }
+
+        .column.third {
+            width: 33.3%;
+        }
+
+        .column.fourth {
+            width: 24.95%;
+        }
+
+        .column.threefourth {
+            width: 74.95%;
+        }
+
+        .column.flow-opposite {
+            float: right;
+        }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+    .centerAanmelding {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    html {
+        font-size: 120%;
+    }
+}
