@@ -76,7 +76,14 @@ header {
 .centertext {
     text-align: center;
 }
-
+.vmargin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
 footer {
     background-color: #c7c6c6;
 }
@@ -91,7 +98,14 @@ footer {
     background-color: rgba(204,204,204,0.3);
     padding: 10px;
 }
-
+.panelhiddenphone {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+.bluegb {
+    background-color: rgba(162,197,242,0.3);
+}
 .centerAanmelding {
     width: 320px;
     margin-left: auto;
@@ -149,6 +163,12 @@ iframe{
         .column.flow-opposite {
             float: right;
         }
+        .panelhiddenphone {
+    border: solid grey 1px;
+    background-color: rgba(204,204,204,0.3);
+    padding: 10px;
+}
+
 }
 
 /* Large screens (1024px) */

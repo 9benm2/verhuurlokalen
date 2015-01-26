@@ -5,6 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="row clearfix">
         <div class="column half">
+            <div class="panelhiddenphone center">
             <asp:Label SkinID="LabelMelding" ID="LabelMelding" runat="server" Text=""></asp:Label>
             <p>
                 Een splinternieuw jeugdlokaal, gelegen in een rustige omgeving met voldoende sportinfrastructuur.
@@ -18,6 +19,7 @@
                 Via de kalender kan u een optie nemen op een beschikbare periode.<br />
                 Wil u later afzien van uw genomen optie kan u deze annuleren.
             </p>
+                </div>
         </div>
         <div class="column half">
             <div class="calcenter panel">
@@ -25,19 +27,23 @@
                 <asp:Panel ID="PanelPeriodeNemen" runat="server">
                     <div class="row clearfix">
                         <div class="column full">
+                            <div class="panel vmargin bluegb">
                             <asp:Button ID="ButtonBegin" runat="server" Text="Als begin vastleggen" OnClick="ButtonBegin_Click" />
                             <asp:Label ID="LabelBegin" runat="server" Text=""></asp:Label>
+                            </div>
                         </div>
                     </div>
                     <div class="row clearfix">
                         <div class="column full">
+                            <div class="panel vmargin bluegb">
                             <asp:Button ID="ButtonEinde" runat="server" Text="Als einde vastleggen" OnClick="ButtonEinde_Click" />
                             <asp:Label ID="LabelEinde" runat="server" Text=""></asp:Label>
+</div>
                         </div>
                     </div>
                     <div class="row clearfix">
                         <div class="column full">
-                            <asp:Button ID="ButtonBevestigen" runat="server" Text="Bevestigen" OnClick="ButtonBevestigen_Click" /><asp:Label ID="LabelFout" runat="server" Text=""></asp:Label>
+                            <asp:Button ID="ButtonBevestigen" Width="250" runat="server" Text="Bevestigen" OnClick="ButtonBevestigen_Click" /><asp:Label ID="LabelFout" runat="server" Text=""></asp:Label>
                         </div>
                     </div>
                 </asp:Panel>
