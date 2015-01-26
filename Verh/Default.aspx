@@ -43,7 +43,7 @@
                     </div>
                     <div class="row clearfix">
                         <div class="column full">
-                            <asp:Button ID="ButtonBevestigen" Width="250" runat="server" Text="Bevestigen" OnClick="ButtonBevestigen_Click" /><asp:Label ID="LabelFout" runat="server" Text=""></asp:Label>
+                            <asp:Button ID="ButtonBevestigen" runat="server" Text="Bevestigen" OnClick="ButtonBevestigen_Click" /><asp:Label ID="LabelFout" runat="server" Text=""></asp:Label>
                         </div>
                     </div>
                 </asp:Panel>
