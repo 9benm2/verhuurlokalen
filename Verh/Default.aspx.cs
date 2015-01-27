@@ -100,14 +100,6 @@ public partial class _Default : System.Web.UI.Page
                     ButtonEinde.Enabled = false;
                     ButtonEinde.Enabled = false;
                 }
-				
-                else if (periode.StatusId == 4)
-                {
-                    LabelCalendar.ForeColor = System.Drawing.Color.Orange;
-                    LabelCalendar.Text = "Deze datum ligt in de vaste periode van " + periode.BeginPeriode + " . is een vaste periode. Deze kan elke gereserveerd worden van....";
-                    ButtonEinde.Enabled = false;
-                    ButtonEinde.Enabled = false;
-                }
             }
         }
         LabelCalendar.Visible = true;
@@ -120,7 +112,7 @@ public partial class _Default : System.Web.UI.Page
         {
             DateTime begin = (DateTime)(periode.BeginPeriode);
             DateTime einde = (DateTime)(periode.EindePeriode);
-            TimeSpan difference = einde.Date - begin.Date;
+            TimeSpan difference = einde.Date - begin.Date; 
 
             VoegPeriodeToe(begin, difference, e, periode.Status.Id);
         }

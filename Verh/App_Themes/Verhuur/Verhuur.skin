@@ -24,17 +24,17 @@ Default skin template. The following skins are provided as examples only.
             </asp:Calendar>
 
                         <asp:Menu runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="4" Font-Names="Verdana" Font-Size="1.2em" ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="10px">
-                            <DynamicHoverStyle BackColor="#F7F6F3" ForeColor="Black" />
+                            <DynamicHoverStyle BackColor="#F7F6F3" ForeColor="Tomato" />
                             <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                             <DynamicMenuStyle BackColor="#F7F6F3" />
                             <DynamicSelectedStyle BackColor="#5D7B9D" />
-                            <StaticHoverStyle BackColor="#F7F6F3" ForeColor="Black" />
+                            <StaticHoverStyle BackColor="#F7F6F3" ForeColor="Tomato" />
                             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                             <StaticSelectedStyle BackColor="#5D7B9D" />
                         </asp:Menu>
 
                         <asp:Menu SkinID="MenuAdmin" runat="server" BackColor="#F7F6F3" DynamicHorizontalOffset="4" Font-Names="Verdana" Font-Size="1.2em" ForeColor="Black" Orientation="Horizontal" StaticSubMenuIndent="10px">
-                            <DynamicHoverStyle BackColor="#CCCCCC" ForeColor="Black" />
+                            <DynamicHoverStyle BackColor="#CCCCCC" ForeColor="Tomato" />
                             <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                             <DynamicMenuStyle BackColor="#CCCCCC" />
                             <DynamicSelectedStyle BackColor="#CCCCCC" />
