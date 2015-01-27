@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TI2_opdracht2" Class="VerhuurDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOPBEN;Initial Catalog=TI2_opdracht2;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TI2_opdracht2ConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=BEN-DESKTOP\SQLEXPRESS;Initial Catalog=TI2_opdracht2;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TI2_opdracht2ConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Vereniging" Member="Verenigings">
     <Type Name="Vereniging">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
